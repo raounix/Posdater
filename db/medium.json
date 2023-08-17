@@ -184,5 +184,8 @@
         "@ReverseTEN": [
             "fbf6e392b4e10b3d2b0194a825f2c17f"
         ]
+    },
+    "topics": {
+        "bug-bounty-tips": []
     }
 }

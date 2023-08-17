@@ -10,11 +10,16 @@ def show_other_blogs():
         print("{} - {}".format(number+1,blog), color='green', background='grey')
 if __name__ == "__main__":
     title = 'Select Option: '
-    options = ['Medium Updates','Add Medium Account','Other Blogs','Exit']
+    options = ['Medium Updates','Add Medium Account','Add Medium Topic','Other Blogs','Exit']
 
     option, index = pick(options, title, indicator='=>')
     if (index == 0):
-        medium.update_medium()
+        options = ['Accounts','Topics','Exit']
+        option, index = pick(options, title, indicator='=>')
+        if (option == 0):
+            medium.update_medium("account")
+        elif (option == 1):
+            medium.update_medium("topic")
     elif (index == 1):
         userID = input("Enter UserID with @ symbol : ")
         if(userID[0] == "@") :
@@ -22,4 +27,8 @@ if __name__ == "__main__":
         else:
             print("UserID not Valid")
     elif (index == 2):
+        topic = input("Enter Topic you Want add : ")
+        medium.add_medium_topic(topic)
+        
+    elif (index == 3):
         show_other_blogs()
