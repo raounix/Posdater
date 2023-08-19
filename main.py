@@ -16,9 +16,9 @@ if __name__ == "__main__":
     if (index == 0):
         options = ['Accounts','Topics','Exit']
         option, index = pick(options, title, indicator='=>')
-        if (option == 0):
+        if (index == 0):
             medium.update_medium("account")
-        elif (option == 1):
+        elif (index == 1):
             medium.update_medium("topic")
     elif (index == 1):
         userID = input("Enter UserID with @ symbol : ")

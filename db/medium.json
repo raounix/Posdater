@@ -186,6 +186,29 @@
         ]
     },
     "topics": {
-        "bug-bounty-tips": []
+        "bug-bounty-tips": [
+            "ad1da829ecfe1309cbe52d1093c1c817",
+            "bc22117f2c29cbe76983d1161508f255",
+            "46d476e3138063a4b8586b4e497dbc0a",
+            "9ec8997ab70319d2ca55ce552c2e283a",
+            "7a597781a6a528b81ae0687aa200a090",
+            "5cf60fc5c73d7c7866c75f29e35eeb09",
+            "50396a172a20e2fca5f12ac2ecc3145c",
+            "904c34af690bac99ace2b2c81eb77032",
+            "c9f83f2113ba82a1a46868d86115d9fa",
+            "f9d112117e646aa860ff630abea39e7d"
+        ],
+        "bug-hunting": [
+            "0e7a9147e189ba48dd1e75623691d712",
+            "8c7c12cbbb5341a527a08cf67987bf63",
+            "6d199121096cf197e249f649da1f5be6",
+            "52e18b15b413ce996f398a92fdb59bdb",
+            "a9dfa9b149a17ce659900dca768a4bc6",
+            "d569a89ab1f41e4ce38bd99e1c00806e",
+            "22ea4cf87332c4603a295f00a301fc23",
+            "64d83a49dafc32f8634248463507d1b0",
+            "3ec0b3f74cefa59c4d6c7c4dfed80ae0",
+            "cc8b14f62a5d047a69d51e5ebd15611e"
+        ]
     }
 }
