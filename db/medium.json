@@ -58,7 +58,9 @@
             "4f6b59a0ebabc8fa9c5bb7641936670f",
             "f65b97417e85c5127ded6bbefa96193f",
             "3ff35638b0521d8ff92ca2bda3eea9ce",
-            "3f5673a40e5ce8e4e59d81cbf6a76316"
+            "3f5673a40e5ce8e4e59d81cbf6a76316",
+            "6cfbd7946ec31b1eaddc45b785574d3b",
+            "a2237f73d3b804c2a25dc6ad9999ef00"
         ],
         "@devanshchauhan4565": [
             "4c2ef7cc514bdcfc8cf536b476d1a2d0",
@@ -151,7 +153,8 @@
             "89a01be45f39a59fdf942cb5dccf6e01",
             "6db8aa82c580650133c6175985d6ae4d",
             "6532e74b90e4bb19cd1374c348a4068e",
-            "03ec99d67e78ae3790a2cdd099c9c1f6"
+            "03ec99d67e78ae3790a2cdd099c9c1f6",
+            "e6330eb1aa5952dcbfc942bc49295a74"
         ],
         "@takshalpentester": [
             "1da44673da2716c62ec3bcf362f67122",
@@ -161,7 +164,8 @@
             "27b75c8328ed7bb700251c1ea197f7e5",
             "3bf3c91d95d983090e9d93e95e4acb06",
             "7bf846c1dde9a7fcee3b0c8ff934b4cb",
-            "08bca7114cf1ecd9b66c2d4316894215"
+            "08bca7114cf1ecd9b66c2d4316894215",
+            "8bda95aa64f4917166174c2cf87d2eb2"
         ],
         "@nav1n": [
             "75b979f3374ca909a3e8ee58e3c428bb",
@@ -174,14 +178,16 @@
             "ac0c1859dd98a35f44f2bb0e4e13ee0b",
             "f8824316de65af465acec9bf93510142",
             "3609680f09a5027f70264efd2ea7966d",
-            "91cfab6543aa121233408fee3b753c55"
+            "91cfab6543aa121233408fee3b753c55",
+            "6ef019f663097fae07d55030c2e496c1"
         ],
         "@0xm5awy": [
             "f666411e4442aa0f72532c9f6edcfdda",
             "3a5781cefcc94f80bd5b62febee6b153",
             "23c25aad41d56b21207d3cc14e32839c",
             "58ccc29538a2c221e99115c4e21dadc3",
-            "e4bfe76a3b1fe3f8b6152c072be8dceb"
+            "e4bfe76a3b1fe3f8b6152c072be8dceb",
+            "f245ec69ee4c2d4eed7563401dc8baeb"
         ],
         "@ReverseTEN": [
             "fbf6e392b4e10b3d2b0194a825f2c17f"
@@ -204,7 +210,19 @@
             "6d45da3b3855b7eb8739d3f6e89450e2",
             "4b1b4dc8cf38b3c64b1d657da8f5ac8c",
             "9b38277d9fec4fc8615840e3487dcade",
-            "08bca7114cf1ecd9b66c2d4316894215"
+            "08bca7114cf1ecd9b66c2d4316894215",
+            "ed390fc7000c0923f7f71f2f5534f7a6",
+            "64507bd9b03b4126a8713eb2ee451d70",
+            "b01329c4b3a2db69ac8c3567ef85390f",
+            "73c18304d2054ec081fd55f1de6bbeb2",
+            "8bda95aa64f4917166174c2cf87d2eb2",
+            "f245ec69ee4c2d4eed7563401dc8baeb",
+            "d69bfdd38823db7bdf45685b5e283f8c",
+            "311930379004127b26d9ab99a7b0b913",
+            "b05f44f10a1a74b022fc0715f88d955f",
+            "0c972a31dcc2c19172647e179feb153a",
+            "dd04298775796e5c41edf55066d27ab3",
+            "accb1739041a7a1b249e1a09a6f831a5"
         ],
         "bug-hunting": [
             "0e7a9147e189ba48dd1e75623691d712",
