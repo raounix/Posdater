@@ -78,7 +78,8 @@
             "11f3878dfed39cb0a5c8d48ef9df2939",
             "57458849d9a6b6ab9ca2afc295b08c65",
             "b286b29c5f9781695ff37833be962d6a",
-            "d37bd9d31edf0f0a66b3401eb65f8870"
+            "d37bd9d31edf0f0a66b3401eb65f8870",
+            "21c50fe86511258291df0310d5ca011d"
         ],
         "@snoopy101": [
             "d6cea4c26f1298f8c7e0a06b0d99bacb",
@@ -232,7 +233,9 @@
             "b05f44f10a1a74b022fc0715f88d955f",
             "0c972a31dcc2c19172647e179feb153a",
             "dd04298775796e5c41edf55066d27ab3",
-            "accb1739041a7a1b249e1a09a6f831a5"
+            "accb1739041a7a1b249e1a09a6f831a5",
+            "a11c909aa369be7cf6d8939e028c9aef",
+            "4b7287b7e15394849da34a1f72699160"
         ],
         "bug-hunting": [
             "0e7a9147e189ba48dd1e75623691d712",
@@ -244,7 +247,20 @@
             "22ea4cf87332c4603a295f00a301fc23",
             "64d83a49dafc32f8634248463507d1b0",
             "3ec0b3f74cefa59c4d6c7c4dfed80ae0",
-            "cc8b14f62a5d047a69d51e5ebd15611e"
+            "cc8b14f62a5d047a69d51e5ebd15611e",
+            "bf33e4961f1417527a237977b1d6068d"
+        ],
+        "hackerone": [
+            "d2ea2145cb1c48d372f55870fe8caf36",
+            "266772f6705d7fbef666094babd371e2",
+            "9b38277d9fec4fc8615840e3487dcade",
+            "8b492cc1a94bed4c3ecc10961c27163e",
+            "9ab09592a87a24005907d1efa98b41c8",
+            "22ea4cf87332c4603a295f00a301fc23",
+            "b64be76cff3a0596aa26e2894fa63c54",
+            "bb89dc92a4f9c46616f5a9cee4f1c8d8",
+            "5ee6dc6e474b03b1d04f38eea85e1b0a",
+            "e075db261c42dc5d5c2f291099726559"
         ]
     }
 }
