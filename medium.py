@@ -3,44 +3,21 @@ from bs4 import BeautifulSoup
 import hashlib
 import requests
 
-def update_accounts():
+def update_articles(json_key,url):
     counter = 1
     data_file = open('./db/medium.json',"r+")
     accounts_json = json.load(data_file)
-    accounts = accounts_json['accounts']
+    accounts = accounts_json[json_key]
     for userid in accounts:
         last_posts = accounts[userid]
-        medium_feed_url = "https://medium.com/feed/{}".format(userid)
+        medium_feed_url = url.format(userid)
         latest_posts = requests.get(medium_feed_url)
         all_posts = BeautifulSoup(latest_posts.text, "xml")
         all_items = all_posts.find_all('item')
         for item in all_items:
             hashed = hashlib.md5(item.title.text.encode()).hexdigest()
             if hashed not in last_posts:
-                accounts_json['accounts'][userid].append(hashed)
-                print("{counter} - New Found ! - {title} : {url}\n".format(counter=str(counter),title=item.title.text,url=item.link.text))
-                counter+=1
-    data_file.close()
-    with open("./db/medium.json", "w") as outfile:
-        json.dump(accounts_json, outfile,indent=4)
-    print("----------------------------------------------------------------\n")
-    print("Done!")
-
-def update_topics():
-    counter = 1
-    data_file = open('./db/medium.json',"r+")
-    accounts_json = json.load(data_file)
-    accounts = accounts_json['topics']
-    for userid in accounts:
-        last_posts = accounts[userid]
-        medium_feed_url = "https://medium.com/feed/tag/{}".format(userid)
-        latest_posts = requests.get(medium_feed_url)
-        all_posts = BeautifulSoup(latest_posts.text, "xml")
-        all_items = all_posts.find_all('item')
-        for item in all_items:
-            hashed = hashlib.md5(item.title.text.encode()).hexdigest()
-            if hashed not in last_posts:
-                accounts_json['topics'][userid].append(hashed)
+                accounts_json[json_key][userid].append(hashed)
                 print("{counter} - New Found ! - {title} : {url}\n".format(counter=str(counter),title=item.title.text,url=item.link.text))
                 counter+=1
     data_file.close()
@@ -53,9 +30,9 @@ def update_medium(type):
     print("Loading URLs. Please Wait")
     print("----------------------------------------------------------------\n")
     if (type == "account"):
-        update_accounts()
+        update_articles("accounts","https://medium.com/feed/{}")
     elif (type == "topic"):
-        update_topics()
+        update_articles("topics","https://medium.com/feed/tag/{}")
 
 def add_medium_account(userID):
     data_file = open('./db/medium.json',"r+")
