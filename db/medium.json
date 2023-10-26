@@ -74,7 +74,8 @@
             "b851288e51922559a6e1d4bd4584520a",
             "2f2411d181ad1f8823766adcc6badcb8",
             "22400c9b8a8423c341989153aba2ba1f",
-            "e407e846f549e2517e9174509dbd36f1"
+            "e407e846f549e2517e9174509dbd36f1",
+            "6a4b69b18661ae708514dd3f189e03fb"
         ],
         "@devanshchauhan4565": [
             "4c2ef7cc514bdcfc8cf536b476d1a2d0",
@@ -95,7 +96,8 @@
             "d37bd9d31edf0f0a66b3401eb65f8870",
             "21c50fe86511258291df0310d5ca011d",
             "17b6624f4a9cd9adf95e29ebc99a9301",
-            "9d1155ebe91c28d6f42212daf39907a0"
+            "9d1155ebe91c28d6f42212daf39907a0",
+            "dfcb13d51227fc3279bf71b74867048f"
         ],
         "@snoopy101": [
             "d6cea4c26f1298f8c7e0a06b0d99bacb",
@@ -206,7 +208,8 @@
             "91cfab6543aa121233408fee3b753c55",
             "6ef019f663097fae07d55030c2e496c1",
             "3e81ed4115244c4f4e77c9e5fdbb1d66",
-            "d1233805895d913b19d5805d283e9e82"
+            "d1233805895d913b19d5805d283e9e82",
+            "202ea7f3a9a0954f1809894a008dcf8c"
         ],
         "@0xm5awy": [
             "f666411e4442aa0f72532c9f6edcfdda",
@@ -253,7 +256,8 @@
             "7d1af54514cd9e491d40f4a41773bb40",
             "83340bf2d9244252cfe047350ef6892a",
             "b4ffd34c4645ef42ae272a8855546bf1"
-        ]
+        ],
+        "@NadirSensoy": []
     },
     "topics": {
         "bug-bounty-tips": [
@@ -359,7 +363,13 @@
             "491383529a7a3dd00b56371e0df5f4ac",
             "5d1c9f41cd94a381df6f372dade7ae76",
             "5ca09cf995a22f31528f019c018efa74",
-            "b616392d32f5bbdff8f672851735c484"
+            "b616392d32f5bbdff8f672851735c484",
+            "249f5ff323c23fdb978dada959d2fd93",
+            "1a8eb99331619810b72bf70fb018d392",
+            "561ff0e279e6b002d47acefe7e8826bc",
+            "ff32f01173dfca77767f24b8b090b8ce",
+            "937fccc79941a7c7e3a8a492f0de5547",
+            "92463711d4e1ce19dc81eaf9215a1aa6"
         ],
         "bug-hunting": [
             "0e7a9147e189ba48dd1e75623691d712",
@@ -396,7 +406,9 @@
             "e674e21f37182dfe7cf887aca6ca0de1",
             "075a10ab94391c3e9fcc2ac413357fa5",
             "5bec0fe5112cdbc821fcdab6cfa8b14e",
-            "7f51c291b1c39005ed1dc3b00204320e"
+            "7f51c291b1c39005ed1dc3b00204320e",
+            "561ff0e279e6b002d47acefe7e8826bc",
+            "c5dc7c5e8974de989f3d536835944ffd"
         ],
         "hackerone": [
             "d2ea2145cb1c48d372f55870fe8caf36",
