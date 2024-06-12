@@ -1,0 +1,6 @@
+{
+  "telegram" : {
+    "token": "Your Bot Token",
+    "channel_id": "Your Channel ID"
+  }
+}

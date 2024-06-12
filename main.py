@@ -2,7 +2,6 @@ from pick import pick
 import json
 import medium
 from print_color import print
-
 def show_other_blogs():
     data_file = open('./db/blogs.json',"r")
     blogs_list = json.load(data_file)

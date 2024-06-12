@@ -2,3 +2,5 @@ pick
 bs4
 print_color
 lxml
+requests
+python-telegram-bot
