@@ -8,6 +8,7 @@ from telegram.request import HTTPXRequest
 sys.path.append("../")
 import medium
 
+
 def initialize():
     json_file = open('../env_files/telegram.json')
     data = json.load(json_file)
@@ -30,6 +31,10 @@ trequest = HTTPXRequest(connection_pool_size=20)
 bot = telegram.Bot(token=bot_data['telegram']['token'], request=trequest)
 topics = medium.update_articles("topics", "https://medium.com/feed/tag/{}", "../db/medium.json")
 retry_after = 5
-asyncio.run(send(bot_data['telegram']['channel_id']))
 
-
+while True:
+    try:
+        asyncio.run(send(bot_data['telegram']['channel_id']))
+        time.sleep(3600)
+    except:
+        pass

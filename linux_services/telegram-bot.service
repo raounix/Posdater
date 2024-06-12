@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/usr/local/tel/Postdater
-ExecStart=/usr/bin/python3 main.py
+WorkingDirectory=/home/dev/Postdater
+ExecStart=/usr/bin/python3 services/telegram_bot.py
 Restart=always
 
 [Install]
