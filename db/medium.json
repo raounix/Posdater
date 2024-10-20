@@ -128,7 +128,9 @@
             "56ef1d8fc46d8b0ee8ae51db735b8a89",
             "0d03b9cd02e742af44c75d535b1c959c",
             "540a5950646d8bf207b569ae9892c436",
-            "f6ada2ee78fc19cef31cb738a25e3679"
+            "f6ada2ee78fc19cef31cb738a25e3679",
+            "011c9eeeced6b6d6beca2bffee81d5bb",
+            "4cb17998fe7be0112316f27127e6666d"
         ],
         "@devanshchauhan4565": [
             "4c2ef7cc514bdcfc8cf536b476d1a2d0",
@@ -608,7 +610,18 @@
             "01d9a5977e5a2e89e1f96f87eb454fac",
             "49aa0ec269cdd904dce1bf92cda5308d",
             "7144d9c1dea74547709883700513f44a",
-            "e8b72168223ac14fe9836c02afc2955b"
+            "e8b72168223ac14fe9836c02afc2955b",
+            "2ba5e2778eb2cc0aab029bded10c70d2",
+            "437d3ed711dfc792aa9263b9741251b9",
+            "c8d30b920f138be3249af36e4581de87",
+            "5b05eec3a11b2338972ea0287b01b5bf",
+            "825e256420d07292760cbd2cbecadc51",
+            "8325dd51a1024f0de6de16d19725eb1c",
+            "3ac71791fd3aca9343abf516e1ee58bc",
+            "3f75ac8eb565dfae7dd3fa21c3f82b6c",
+            "f11177499350554d85dbed26f8355770",
+            "5f0f6d59b3d7f3a421c22bea211e8f3e",
+            "e547d86c26421961a6f7574cb006439f"
         ],
         "bug-hunting": [
             "0e7a9147e189ba48dd1e75623691d712",
@@ -709,7 +722,8 @@
             "2d653adadd1436755cb4420d9d4bc405",
             "e1d8eddcd3e5984aba07b385deabbc1b",
             "2e522206a0615ac51a74fbc2ede45137",
-            "c85e3f717bde53510260fc3395ed382e"
+            "c85e3f717bde53510260fc3395ed382e",
+            "437d3ed711dfc792aa9263b9741251b9"
         ],
         "hackerone": [
             "d2ea2145cb1c48d372f55870fe8caf36",
@@ -825,7 +839,13 @@
             "f7ee6782d4db0948c6b48ab90eb9f9d9",
             "9cfe4c7bea4c28e57bb53f21e8e90059",
             "e4c49c5da755691e2b8c7366bb02a614",
-            "ff0b7c128da0700272e256aa3a500203"
+            "ff0b7c128da0700272e256aa3a500203",
+            "9e2129e30518f458ee2353f1301c77a8",
+            "5b05eec3a11b2338972ea0287b01b5bf",
+            "8325dd51a1024f0de6de16d19725eb1c",
+            "327fade4039fab2acfc0bac97ce898a3",
+            "79b7830c738cde0e2d3253bae7804a3f",
+            "e547d86c26421961a6f7574cb006439f"
         ]
     }
 }
