@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medium Feed Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    .post {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .post a {
+      font-size: 1.1em;
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .post a:hover {
+      text-decoration: underline;
+    }
+
+    .category {
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      margin: 5px 0;
+      width: 100%;
+      max-width: 400px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 16px;
+      margin-top: 8px;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    .message {
+      color: green;
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    hr {
+      margin: 40px 0 20px;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 600px) {
+      button {
+        width: 100%;
+      }
+
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Latest Medium Posts</h1>
+
+    {% for post in posts %}
+      <div class="post">
+        <a href="{{ post.url }}" target="_blank">{{ post.title }}</a><br />
+        <span class="category">From: {{ post.category }}</span>
+      </div>
+    {% endfor %}
+
+    <hr />
+    <h2>Add a Topic</h2>
+    <form onsubmit="addTopic(event)">
+      <input type="text" id="topicInput" placeholder="Enter topic name" />
+      <button type="submit">Add Topic</button>
+      <div id="topicMsg" class="message"></div>
+    </form>
+
+    <h2>Current Topics</h2>
+    <ul id="topicList">
+      {% for topic in topics %}
+        <li>
+          {{ topic }}
+          <button onclick="removeTopic('{{ topic }}')">Remove</button>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <hr />
+    <h2>Add a Medium Account</h2>
+    <form onsubmit="addAccount(event)">
+      <input type="text" id="accountInput" placeholder="Enter @username" />
+      <button type="submit">Add Account</button>
+      <div id="accountMsg" class="message"></div>
+    </form>
+
+    <h2>Current Accounts</h2>
+    <ul id="accountList">
+      {% for account in accounts %}
+        <li>
+          {{ account }}
+          <button onclick="removeAccount('{{ account }}')">Remove</button>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <script>
+    async function addTopic(event) {
+      event.preventDefault();
+      const value = document.getElementById("topicInput").value;
+      const msg = document.getElementById("topicMsg");
+      msg.textContent = "Adding...";
+      const res = await fetch("/add-topic", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ value })
+      });
+      const result = await res.json();
+      msg.textContent = res.ok ? result.message : result.detail;
+      if (res.ok) setTimeout(() => location.reload(), 1000);
+    }
+
+    async function addAccount(event) {
+      event.preventDefault();
+      const value = document.getElementById("accountInput").value;
+      const msg = document.getElementById("accountMsg");
+      msg.textContent = "Adding...";
+      const res = await fetch("/add-account", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ value })
+      });
+      const result = await res.json();
+      msg.textContent = res.ok ? result.message : result.detail;
+      if (res.ok) setTimeout(() => location.reload(), 1000);
+    }
+
+    async function removeTopic(value) {
+      const res = await fetch("/remove-topic", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ value })
+      });
+      const result = await res.json();
+      alert(result.message || result.detail);
+      if (res.ok) location.reload();
+    }
+
+    async function removeAccount(value) {
+      const res = await fetch("/remove-account", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ value })
+      });
+      const result = await res.json();
+      alert(result.message || result.detail);
+      if (res.ok) location.reload();
+    }
+  </script>
+</body>
+</html>
