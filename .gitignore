@@ -161,4 +161,4 @@ cython_debug/
 
 # For Telegram json file
 telegram.json
-db/
+medium.json
